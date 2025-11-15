@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bahiana&family=Dongle&family=DotGothic16&family=Jersey+20&family=Nabla&family=Pixelify+Sans:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&family=Press+Start+2P&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Tiny5&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #6666ff, #9933ff, #cc66ff, #ffcc66,  #ff9933, #ff9966);
+    background-attachment: fixed;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.titulo {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: #ffffff;
+    padding: 3%;
+    text-align: center;
+    text-size-adjust: 35%;
+    text-shadow: 
+        4px 4px 0px #ff9900,
+        8px 8px 0px #cc66ff,
+        12px 12px 0px #333399;
+}
+
+.navbar {
+    display: flex;
+    margin: 0% 10%;
+    padding: 1%;
+    justify-content: space-around;
+    justify-items: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    text-size-adjust: 50%;
+    list-style: none;
+    
+}
+
+
+.nav-item {
+    display: flex;
+    padding: 5%;
+    text-decoration: none;
+    color: #ab76ff;
+    box-sizing: border-box;
+    box-shadow: #763fce;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
