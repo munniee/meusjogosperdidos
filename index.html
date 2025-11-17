@@ -7,9 +7,11 @@
         <title>MEUS JOGOS PERDIDOS</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+
         <!-- Estrelas animadas de fundo -->
-        <div class="estrela">
+        <div class="estrelas-fundo">
             <div class="estrela estrela1"></div>
             <div class="estrela estrela2"></div>
             <div class="estrela estrela3"></div>
@@ -20,12 +22,9 @@
             <div class="estrela estrela8"></div>
         </div>
        
-        <!-- Créditos dos criadores -->
-      
-       
         <header>
             <h1 class="titulo">Meus Jogos Perdidos</h1>
-            <nav >
+            <nav>
                 <ul class="navbar">
                     <li><a class="nav-item" href="#inicio">Início</a></li>
                     <li><a class="nav-item" href="#sobre">Sobre</a></li>
@@ -36,19 +35,19 @@
         </header>
 
         <main>
-            <selection id="Início">
+            <selection id="inicio">
                 <h2>Bem vindo aos seus jogos nostálgicos</h2>
                 <p>Você vai se surpreender com os jogos que quase ninguém mais lembra</p>
             </selection>
 
             <!-- Barra de pesquisa -->
-            <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Buscar jogos..." class="search-bar">
-            <button class="search-btn">🔍</button>
+            <div class="barra-pesquisa">
+            <input type="text" id="searchInput" placeholder="Buscar jogos..." class="barra-input">
+            <button class="barra-buton">🔍</button>
         </div>
         
         <!-- Menu principal -->
-        <nav class="main-menu">
+        <nav class="menu">
             <ul>
                 <li><a href="#" class="menu-item">GERAL</a></li>
                 <li><a href="#" class="menu-item">CLÁSSICOS</a></li>
@@ -74,28 +73,31 @@
         </nav>
 
          <!-- Conteúdo principal -->
-        <div class="content">
-            <div class="welcome-section">
+        <section class="content">
+            <div id="welcome">
                 <h3> Explore nossa coleção de jogos nostálgicos!</h3>
                 <p>Encontre seus jogos favoritos da infância e reviva momentos inesquecíveis.</p>
             </div>
-        </div>
+        </section>
     </main>
 
-            <selection id="Sobre">
-                <h2>Sobre o site</h2>
-                <p>  MEUS JOGOS PERDIDOS não é apenas um site; é um verdadeiro santuário digital construído para os amantes da cultura retrô e da história do videogame. Nosso objetivo principal é preservar e reviver aqueles títulos que definiram gerações e que, com o passar do tempo, ficaram relegados à memória. Aqui, o saudosismo encontra a conveniência de um acervo cuidadosamente catalogado, garantindo que você possa reencontrar seus jogos perdidos com facilidade.</p>
-                    
-                <p>  A principal função do site é servir como um portal de acesso fácil e direto a uma vasta coleção de jogos nostálgicos e clássicos, permitindo que os usuários os explorem e os joguem (ou acessem informações sobre eles, dependendo da funcionalidade real do site) de maneira simples. Com um design vibrante e uma estética de pixel art que remete diretamente aos consoles de outrora, o site oferece uma experiência imersiva desde o primeiro clique. Você pode navegar por categorias como Geral, Clássicos e Mais Procurados, ou utilizar a barra de busca para encontrar aquele jogo específico que marcou sua infância. Cada título em nossa coleção foi selecionado para despertar a nostalgia e proporcionar a oportunidade de reviver momentos inesquecíveis de alegria e desafio.</p>
-                    
-                <p>  Seja você um veterano que busca fechar aquele loop de jogo inacabado ou um novato curioso sobre as raízes do gaming, o Meus Jogos Perdidos é o seu destino final. Explore nossa vasta coleção de jogos nostálgicos e prepare-se para uma viagem no tempo!</p>
+            <selection class="sb">
+                <div id="sobre">
+                    <h2>Sobre o site</h2>
+                    <p>  MEUS JOGOS PERDIDOS não é apenas um site; é um verdadeiro santuário digital construído para os amantes da cultura retrô e da história do videogame. Nosso objetivo principal é preservar e reviver aqueles títulos que definiram gerações e que, com o passar do tempo, ficaram relegados à memória. Aqui, o saudosismo encontra a conveniência de um acervo cuidadosamente catalogado, garantindo que você possa reencontrar seus jogos perdidos com facilidade.</p>
+                        
+                    <p>  A principal função do site é servir como um portal de acesso fácil e direto a uma vasta coleção de jogos nostálgicos e clássicos, permitindo que os usuários os explorem e os joguem (ou acessem informações sobre eles, dependendo da funcionalidade real do site) de maneira simples. Com um design vibrante e uma estética de pixel art que remete diretamente aos consoles de outrora, o site oferece uma experiência imersiva desde o primeiro clique. Você pode navegar por categorias como Geral, Clássicos e Mais Procurados, ou utilizar a barra de busca para encontrar aquele jogo específico que marcou sua infância. Cada título em nossa coleção foi selecionado para despertar a nostalgia e proporcionar a oportunidade de reviver momentos inesquecíveis de alegria e desafio.</p>
+                        
+                    <p>  Seja você um veterano que busca fechar aquele loop de jogo inacabado ou um novato curioso sobre as raízes do gaming, o Meus Jogos Perdidos é o seu destino final. Explore nossa vasta coleção de jogos nostálgicos e prepare-se para uma viagem no tempo!</p>
+                </div>
             </selection>
 
-            <Selection id="Cardápio">
+            <Selection id="catalogo">
                 <h2>Nosso Catálogo</h2>
                 <p>FAZER DEPOIS</p>
             </Selection>
 
+             <!-- Créditos dos criadores -->
             <selection id="Criadores">
 
         <div class="creditos-animados">
