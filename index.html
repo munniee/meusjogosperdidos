@@ -1,107 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Descrição do site para mecanismo de busca">
-        <title>MEUS JOGOS PERDIDOS</title>
-    </head>
-    <body>
-        <!-- Estrelas animadas de fundo -->
-        <div class="estrela">
-            <div class="estrela estrela1"></div>
-            <div class="estrela estrela2"></div>
-            <div class="estrela estrela3"></div>
-            <div class="estrela estrela4"></div>
-            <div class="estrela estrela5"></div>
-            <div class="estrela estrela6"></div>
-            <div class="estrela estrela7"></div>
-            <div class="estrela estrela8"></div>
-        </div>
-       
-        <!-- Créditos dos criadores -->
-        <div class="creditos-animados">
-            <div class="criador-name">Munni</div>
-            <div class="criador-name">Thai</div>
-            <div class="criador-name">Bryan</div>
-            <div class="criador-name">Lissa</div>
-        </div>
-       
-        <header>
-            <h1>Meus Jogos Perdidos</h1>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#catálogo">Catálogo</a></li>
-                    <li><a href="#criadores">Criadores</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição do site para mecanismo de busca">
+    <title>MEUS JOGOS PERDIDOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <main>
-            <selection id="Início">
-                <h2>Bem vindo aos seus jogos nostálgicos</h2>
-                <p>Você vai se surpreender com os jogos que quase ninguém mais lembra</p>
-            </selection>
+<body>
 
-            <!-- Barra de pesquisa -->
-            <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Buscar jogos..." class="search-bar">
-            <button class="search-btn">🔍</button>
+    <!-- Estrelas animadas de fundo -->
+    <div class="estrelas-fundo">
+        <div class="estrela estrela1"></div>
+        <div class="estrela estrela2"></div>
+        <div class="estrela estrela3"></div>
+        <div class="estrela estrela4"></div>
+        <div class="estrela estrela5"></div>
+        <div class="estrela estrela6"></div>
+        <div class="estrela estrela7"></div>
+        <div class="estrela estrela8"></div>
+    </div>
+
+    <header>
+        <h1 class="titulo">Meus Jogos Perdidos</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a class="nav-item" href="#inicio">Início</a></li>
+                <li><a class="nav-item" href="#sobre">Sobre</a></li>
+                <li><a class="nav-item" href="#catalogo">Catálogo</a></li>
+                <li><a class="nav-item" href="#criadores">Criadores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- SEÇÃO INÍCIO -->
+        <section id="inicio">
+            <h2>Bem vindo aos seus jogos nostálgicos</h2>
+            <p>Você vai se surpreender com os jogos que quase ninguém mais lembra</p>
+        </section>
+
+        <!-- Barra de pesquisa -->
+        <div class="barra-pesquisa">
+            <input type="text" id="searchInput" placeholder="Buscar jogos..." class="barra-input">
+            <button class="barra-buton">🔍</button>
         </div>
-        
+
         <!-- Menu principal -->
-        <nav class="main-menu">
+        <nav class="menu">
             <ul>
-                <li><a href="#" class="menu-item">GERAL</a></li>
-                <li><a href="#" class="menu-item">CLÁSSICOS</a></li>
-                <li><a href="#" class="menu-item">MAIS PROCURADOS</a></li>
+                <li><a href="#" class="menu-item" data-filter="all">GERAL</a></li>
+                <li><a href="#" class="menu-item" data-filter="classico">CLÁSSICOS</a></li>
+                <li><a href="#" class="menu-item" data-filter="populares">MAIS PROCURADOS</a></li>
+
                 <li class="dropdown">
                     <a href="#" class="menu-item dropdown-toggle">MAIS ▼</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Ação</a></li>
-                        <li><a href="#">Aventura</a></li>
-                        <li><a href="#">RPG</a></li>
-                        <li><a href="#">Estratégia</a></li>
-                        <li><a href="#">Simulação</a></li>
-                        <li><a href="#">Esportes</a></li>
-                        <li><a href="#">Corrida</a></li>
-                        <li><a href="#">Luta</a></li>
-                        <li><a href="#">Puzzle</a></li>
-                        <li><a href="#">Arcade</a></li>
-                        <li><a href="#">Plataforma</a></li>
-                        <li><a href="#">Tiro</a></li>
+                        <li><a href="#" data-filter="acao">Ação</a></li>
+                        <li><a href="#" data-filter="aventura">Aventura</a></li>
+                        <li><a href="#" data-filter="rpg">RPG</a></li>
+                        <li><a href="#" data-filter="estrategia">Estratégia</a></li>
+                        <li><a href="#" data-filter="simulacao">Simulação</a></li>
+                        <li><a href="#" data-filter="esportes">Esportes</a></li>
+                        <li><a href="#" data-filter="corrida">Corrida</a></li>
+                        <li><a href="#" data-filter="luta">Luta</a></li>
+                        <li><a href="#" data-filter="puzzle">Puzzle</a></li>
+                        <li><a href="#" data-filter="arcade">Arcade</a></li>
+                        <li><a href="#" data-filter="plataforma">Plataforma</a></li>
+                        <li><a href="#" data-filter="tiro">Tiro</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
 
-         <!-- Conteúdo principal -->
-        <div class="content">
-            <div class="welcome-section">
-                <h3> Explore nossa coleção de jogos nostálgicos!</h3>
+        <!-- TEXTO DE BOAS-VINDAS -->
+        <section class="content">
+            <div id="welcome">
+                <h3>Explore nossa coleção de jogos nostálgicos!</h3>
                 <p>Encontre seus jogos favoritos da infância e reviva momentos inesquecíveis.</p>
             </div>
-        </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="sb">
+            <h2>Sobre o site</h2>
+            <p>MEUS JOGOS PERDIDOS não é apenas um site; é um verdadeiro santuário digital...</p>
+
+            <p>A principal função do site é servir como um portal de acesso fácil e direto...</p>
+
+            <p>Seja você um veterano que busca fechar aquele loop de jogo inacabado...</p>
+        </section>
+
+        <!-- SEÇÃO CATÁLOGO (para o JavaScript preencher dinamicamente) -->
+        <section id="catalogo">
+            <h2>Nosso Catálogo</h2>
+
+            <!-- AQUI OS JOGOS SERÃO GERADOS PELO JAVASCRIPT -->
+            <div id="lista-jogos" class="lista-jogos"></div>
+        </section>
+
+        <!-- SEÇÃO CRIADORES -->
+        <section id="criadores">
+            <h2>Criadores</h2>
+
+            <div class="creditos-animados">
+                <div class="criador-name">Munni</div>
+                <div class="criador-name">Thai</div>
+                <div class="criador-name">Bryan</div>
+                <div class="criador-name">Lissa</div>
+            </div>
+        </section>
+
     </main>
 
-            <selection id="Sobre">
-                <h2>Sobre o site</h2>
-                <p>  MEUS JOGOS PERDIDOS não é apenas um site; é um verdadeiro santuário digital construído para os amantes da cultura retrô e da história do videogame. Nosso objetivo principal é preservar e reviver aqueles títulos que definiram gerações e que, com o passar do tempo, ficaram relegados à memória. Aqui, o saudosismo encontra a conveniência de um acervo cuidadosamente catalogado, garantindo que você possa reencontrar seus jogos perdidos com facilidade.</p>
-                    
-                <p>  A principal função do site é servir como um portal de acesso fácil e direto a uma vasta coleção de jogos nostálgicos e clássicos, permitindo que os usuários os explorem e os joguem (ou acessem informações sobre eles, dependendo da funcionalidade real do site) de maneira simples. Com um design vibrante e uma estética de pixel art que remete diretamente aos consoles de outrora, o site oferece uma experiência imersiva desde o primeiro clique. Você pode navegar por categorias como Geral, Clássicos e Mais Procurados, ou utilizar a barra de busca para encontrar aquele jogo específico que marcou sua infância. Cada título em nossa coleção foi selecionado para despertar a nostalgia e proporcionar a oportunidade de reviver momentos inesquecíveis de alegria e desafio.</p>
-                    
-                <p>  Seja você um veterano que busca fechar aquele loop de jogo inacabado ou um novato curioso sobre as raízes do gaming, o Meus Jogos Perdidos é o seu destino final. Explore nossa vasta coleção de jogos nostálgicos e prepare-se para uma viagem no tempo!</p>
-            </selection>
-
-            <Selection id="Cardápio">
-                <h2>Nosso Catálogo</h2>
-                <p>FAZER DEPOIS</p>
-            </Selection>
-
-            <selection id="Criadores">
-                
-            </selection>
-        </main>
-    </body>
+    <script src="script.js"></script>
+</body>
+</html>
